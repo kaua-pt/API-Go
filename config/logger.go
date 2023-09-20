@@ -3,6 +3,7 @@ package config
 import (
 	"io"
 	"log"
+	"os"
 )
 
 type Logger struct {
@@ -13,4 +14,7 @@ type Logger struct {
 	writer  io.Writer
 }
 
-func NewLogger() *Logger {}
+func NewLogger() *Logger {
+	writer := io.Writer(os.Stdout)
+	
+}
