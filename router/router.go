@@ -7,7 +7,7 @@ func Initialize() {
 	router := gin.Default()
 
 	// inicializar rotas
-	
+	InitRoutes(router)
 
 	// roda
 	router.Run()
